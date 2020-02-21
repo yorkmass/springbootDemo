@@ -1,0 +1,957 @@
+[INFO] [2020-02-19 23:22:38][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-19 23:22:39][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 14228 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-19 23:22:39][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-19 23:22:40][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 9999 (http)
+[INFO] [2020-02-19 23:22:40][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1635 ms
+[INFO] [2020-02-19 23:22:43][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-19 23:22:43][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-19 23:22:43][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-19 23:22:43][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-19 23:22:44][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 9999 (http) with context path ''
+[INFO] [2020-02-19 23:22:44][com.yorkmass.demo.App - 61]Started App in 5.566 seconds (JVM running for 8.449)
+[INFO] [2020-02-19 23:23:14][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-19 23:23:14][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 8 ms
+[INFO] [2020-02-19 23:23:14][com.yorkmass.demo.controller.testController - 26]=====鎴戞槸锛歽aoyi锛屾垜鍦ㄨ繖閲岋紒鎴戠殑瀵嗙爜鏄細1218544729
+[INFO] [2020-02-20 10:36:02][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 10:36:02][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 12792 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 10:36:02][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 10:36:04][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 9999 (http)
+[INFO] [2020-02-20 10:36:04][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1568 ms
+[INFO] [2020-02-20 10:36:06][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 10:36:06][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 10:36:06][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 10:36:06][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 10:36:06][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 9999 (http) with context path ''
+[INFO] [2020-02-20 10:36:06][com.yorkmass.demo.App - 61]Started App in 4.045 seconds (JVM running for 5.737)
+[INFO] [2020-02-20 10:38:22][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 10:38:22][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 6412 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 10:38:22][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 10:38:24][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 9999 (http)
+[INFO] [2020-02-20 10:38:24][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1574 ms
+[INFO] [2020-02-20 10:38:25][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 10:38:26][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 10:38:26][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 10:38:26][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 10:38:26][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 9999 (http) with context path ''
+[INFO] [2020-02-20 10:38:26][com.yorkmass.demo.App - 61]Started App in 4.017 seconds (JVM running for 5.73)
+[INFO] [2020-02-20 10:38:41][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 10:38:41][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 8 ms
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:9999/test01/login
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:127.0.0.1
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 41]name:username--value:yaoyi
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 41]name:password--value:1218544729
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 10:38:41][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:05:04][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 11:05:05][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 15280 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 11:05:05][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 11:05:06][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 11:05:06][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1508 ms
+[INFO] [2020-02-20 11:05:08][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 11:05:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 11:05:08][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:05:08][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:05:08][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 11:05:08][com.yorkmass.demo.App - 61]Started App in 4.07 seconds (JVM running for 5.77)
+[INFO] [2020-02-20 11:05:30][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 11:05:30][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 10 ms
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:127.0.0.1
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 41]name:username--value:yaoyi
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 41]name:password--value:1218544729
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:05:30][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:34:44][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 11:34:44][com.yorkmass.demo.App - 55]Starting App v0.0.1-SNAPSHOT on yorkmass with PID 14836 (C:\Users\Administrator\Desktop\部署\demo-0.0.1-SNAPSHOT.jar started by Administrator in C:\Users\Administrator\Desktop\部署)
+[INFO] [2020-02-20 11:34:44][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 11:34:47][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 11:34:47][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 2603 ms
+[INFO] [2020-02-20 11:34:49][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/Desktop/部署/demo-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\Desktop\部署\transaction-logs
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 11:34:49][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 11:34:49][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:34:49][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:34:49][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 11:34:49][com.yorkmass.demo.App - 61]Started App in 5.678 seconds (JVM running for 6.62)
+[INFO] [2020-02-20 11:35:22][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 11:35:22][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 16 ms
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:35:22][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:51:39][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 11:51:39][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 9016 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 11:51:39][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 11:51:40][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 11:51:41][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1501 ms
+[INFO] [2020-02-20 11:51:42][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 11:51:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 11:51:42][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:51:42][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:51:43][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 11:51:43][com.yorkmass.demo.App - 61]Started App in 4.058 seconds (JVM running for 5.73)
+[INFO] [2020-02-20 11:51:46][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 11:51:46][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 20 ms
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:127.0.0.1
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 41]name:username--value:yaoyi
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 41]name:password--value:1218544729
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:51:46][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:127.0.0.1
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 41]name:username--value:yaoyi
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 41]name:password--value:1218544729
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:51:52][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:57:09][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 11:57:09][com.yorkmass.demo.App - 55]Starting App v0.0.1-SNAPSHOT on yorkmass with PID 13324 (C:\Users\Administrator\Desktop\部署\demo-0.0.1-SNAPSHOT.jar started by Administrator in C:\Users\Administrator\Desktop\部署)
+[INFO] [2020-02-20 11:57:09][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 11:57:11][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 11:57:11][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 2428 ms
+[INFO] [2020-02-20 11:57:13][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/Desktop/部署/demo-0.0.1-SNAPSHOT.jar!/BOOT-INF/lib/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\Desktop\部署\transaction-logs
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 11:57:13][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 11:57:13][com.atomikos.datasource.xa.XATransactionalResource - 28]test1DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:57:13][com.atomikos.datasource.xa.XATransactionalResource - 28]test2DataSource: refreshed XAResource
+[INFO] [2020-02-20 11:57:13][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 11:57:13][com.yorkmass.demo.App - 61]Started App in 5.095 seconds (JVM running for 5.775)
+[INFO] [2020-02-20 11:57:17][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 11:57:17][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 15 ms
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:57:17][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/test01/login
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 11:57:18][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 15:31:17][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:31:18][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 17596 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:31:18][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[WARN] [2020-02-20 15:31:19][org.mybatis.spring.mapper.ClassPathMapperScanner - 167]No MyBatis mapper was found in '[com.yorkmass.demo]' package. Please check your configuration.
+[INFO] [2020-02-20 15:31:19][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:31:19][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1620 ms
+[WARN] [2020-02-20 15:31:20][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - 558]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+[INFO] [2020-02-20 15:31:20][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 136]
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2020-02-20 15:31:20][org.springframework.boot.SpringApplication - 826]Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'druidDBConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.yorkmass.demo.App.main(App.java:15)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.datasource.driverClassName' in value "${spring.datasource.driverClassName}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:908)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 17 more
+[INFO] [2020-02-20 15:34:33][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:34:33][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 16528 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:34:33][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[WARN] [2020-02-20 15:34:34][org.mybatis.spring.mapper.ClassPathMapperScanner - 167]No MyBatis mapper was found in '[com.yorkmass.demo]' package. Please check your configuration.
+[INFO] [2020-02-20 15:34:35][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:34:35][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1580 ms
+[WARN] [2020-02-20 15:34:35][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - 558]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.yorkmass.demo.service.IUserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] [2020-02-20 15:34:35][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 136]
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2020-02-20 15:34:35][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 40]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.yorkmass.demo.controller.UserController required a bean of type 'com.yorkmass.demo.service.IUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.yorkmass.demo.service.IUserService' in your configuration.
+
+[INFO] [2020-02-20 15:37:26][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:37:27][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 10056 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:37:27][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[WARN] [2020-02-20 15:37:27][org.mybatis.spring.mapper.ClassPathMapperScanner - 167]No MyBatis mapper was found in '[com.yorkmass.demo]' package. Please check your configuration.
+[INFO] [2020-02-20 15:37:28][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:37:28][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1543 ms
+[WARN] [2020-02-20 15:37:28][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - 558]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.yorkmass.demo.service.IUserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] [2020-02-20 15:37:28][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 136]
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2020-02-20 15:37:28][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 40]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.yorkmass.demo.controller.UserController required a bean of type 'com.yorkmass.demo.service.IUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.yorkmass.demo.service.IUserService' in your configuration.
+
+[INFO] [2020-02-20 15:39:28][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:39:29][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 18144 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:39:29][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 15:39:31][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:39:31][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1750 ms
+[WARN] [2020-02-20 15:39:31][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - 558]Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.yorkmass.demo.service.IUserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[INFO] [2020-02-20 15:39:31][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 136]
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] [2020-02-20 15:39:31][org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 40]
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.yorkmass.demo.controller.UserController required a bean of type 'com.yorkmass.demo.service.IUserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.yorkmass.demo.service.IUserService' in your configuration.
+
+[INFO] [2020-02-20 15:40:22][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:40:22][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 17740 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:40:22][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 15:40:26][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:40:26][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 18368 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:40:26][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 15:40:28][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:40:28][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1500 ms
+[INFO] [2020-02-20 15:40:28][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 15:40:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 15:40:29][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 15:40:29][com.yorkmass.demo.App - 61]Started App in 3.32 seconds (JVM running for 5.08)
+[INFO] [2020-02-20 15:40:39][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 15:40:39][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 12 ms
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/user/20
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 15:40:40][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:User{username='gyf', password='123', id=20, emp_id='null'}
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/user/register
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 41]name:username--value:bjszz
+[INFO] [2020-02-20 15:43:26][com.yorkmass.demo.aspect.WebLogAspect - 41]name:password--value:123
+[INFO] [2020-02-20 15:43:27][com.alibaba.druid.pool.DruidDataSource - 715]{dataSource-1} inited
+[INFO] [2020-02-20 15:43:27][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 15:43:27][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:success
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 15:44:15][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 15:45:33][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 15:58:25][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 15:58:26][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 15644 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 15:58:26][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 15:58:28][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 15:58:28][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1842 ms
+[INFO] [2020-02-20 15:58:28][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 15:58:29][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 15:58:29][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 15:58:29][com.yorkmass.demo.App - 61]Started App in 3.645 seconds (JVM running for 5.611)
+[INFO] [2020-02-20 15:58:40][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 15:58:40][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 12 ms
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 15:58:40][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 16:07:13][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 16:07:14][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 5896 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 16:07:14][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 16:07:16][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 16:07:16][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 2162 ms
+[INFO] [2020-02-20 16:07:17][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 16:07:17][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 16:07:17][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 16:07:17][com.yorkmass.demo.App - 61]Started App in 4.169 seconds (JVM running for 5.967)
+[INFO] [2020-02-20 16:07:24][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 16:07:24][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 13 ms
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:07:24][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[ERROR] [2020-02-20 16:07:24][freemarker.runtime - 59]Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> springMacroRequestContext  [in template "stu/list.ftl" at line 6, column 20]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${springMacroRequestContext.getContex...  [in template "stu/list.ftl" at line 6, column 18]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:48)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.MethodCall._eval(MethodCall.java:55)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:331)
+	at freemarker.core.Environment.visit(Environment.java:337)
+	at freemarker.core.Environment.process(Environment.java:310)
+	at freemarker.template.Template.process(Template.java:383)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:391)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:304)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:255)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:179)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2020-02-20 16:07:24][org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView - 204]Cannot render error page for request [/tests/stu/list] and exception [The following has evaluated to null or missing:
+==> springMacroRequestContext  [in template "stu/list.ftl" at line 6, column 20]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${springMacroRequestContext.getContex...  [in template "stu/list.ftl" at line 6, column 18]
+----] as the response has already been committed. As a result, the response may have the wrong status code.
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:07:29][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[ERROR] [2020-02-20 16:07:29][freemarker.runtime - 59]Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> springMacroRequestContext  [in template "stu/list.ftl" at line 6, column 20]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${springMacroRequestContext.getContex...  [in template "stu/list.ftl" at line 6, column 18]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDescriptionBuilder(UnexpectedTypeException.java:85)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:48)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.MethodCall._eval(MethodCall.java:55)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:331)
+	at freemarker.core.Environment.visit(Environment.java:337)
+	at freemarker.core.Environment.process(Environment.java:310)
+	at freemarker.template.Template.process(Template.java:383)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:391)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:304)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:255)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:179)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR] [2020-02-20 16:07:29][org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView - 204]Cannot render error page for request [/tests/stu/list] and exception [The following has evaluated to null or missing:
+==> springMacroRequestContext  [in template "stu/list.ftl" at line 6, column 20]
+
+----
+Tip: If the failing expression is known to legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${springMacroRequestContext.getContex...  [in template "stu/list.ftl" at line 6, column 18]
+----] as the response has already been committed. As a result, the response may have the wrong status code.
+[INFO] [2020-02-20 16:08:39][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 16:08:40][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 5620 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 16:08:40][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 16:08:41][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 16:08:41][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1525 ms
+[INFO] [2020-02-20 16:08:42][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 16:08:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 16:08:42][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 16:08:42][com.yorkmass.demo.App - 61]Started App in 3.154 seconds (JVM running for 4.828)
+[INFO] [2020-02-20 16:08:55][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 16:08:55][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 7 ms
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:08:55][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 16:12:29][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 16:12:30][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 15308 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 16:12:30][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 16:12:31][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 16:12:31][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1455 ms
+[INFO] [2020-02-20 16:12:32][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 16:12:32][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 16:12:32][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 16:12:32][com.yorkmass.demo.App - 61]Started App in 3.089 seconds (JVM running for 4.833)
+[INFO] [2020-02-20 16:12:37][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 16:12:37][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 16 ms
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:12:37][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 16:13:05][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 16:13:05][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 9588 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 16:13:05][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 16:13:07][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 16:13:07][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1491 ms
+[INFO] [2020-02-20 16:13:07][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 16:13:08][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 16:13:08][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 16:13:08][com.yorkmass.demo.App - 61]Started App in 3.125 seconds (JVM running for 4.843)
+[INFO] [2020-02-20 16:13:12][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 16:13:12][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 10 ms
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:13:12][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
+[INFO] [2020-02-20 16:13:39][org.hibernate.validator.internal.util.Version - 21]HV000001: Hibernate Validator 6.0.18.Final
+[INFO] [2020-02-20 16:13:40][com.yorkmass.demo.App - 55]Starting App on yorkmass with PID 2964 (C:\Users\Administrator\IdeaProjects\yorkmass\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\yorkmass)
+[INFO] [2020-02-20 16:13:40][com.yorkmass.demo.App - 651]No active profile set, falling back to default profiles: default
+[INFO] [2020-02-20 16:13:41][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 92]Tomcat initialized with port(s): 8888 (http)
+[INFO] [2020-02-20 16:13:41][org.springframework.web.context.ContextLoader - 284]Root WebApplicationContext: initialization completed in 1437 ms
+[INFO] [2020-02-20 16:13:42][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - 171]Initializing ExecutorService 'applicationTaskExecutor'
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Loaded jar:file:/C:/Users/Administrator/.m2/repository/com/atomikos/transactions/4.0.6/transactions-4.0.6.jar!/transactions-defaults.properties
+[WARN] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 24]Thanks for using Atomikos! Evaluate http://www.atomikos.com/Main/ExtremeTransactions for advanced features and professional support
+or register at http://www.atomikos.com/Main/RegisterYourDownload to disable this message and receive FREE tips & advice
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_max_wait_time_on_shutdown = 9223372036854775807
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.allow_subtransactions = true
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.recovery_delay = 10000
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.automatic_resource_registration = true
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_max_retries = 5
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.client_demarcation = false
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.threaded_2pc = false
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.serial_jta_transactions = true
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_dir = C:\Users\Administrator\IdeaProjects\yorkmass\transaction-logs
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.rmi_export_class = none
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_actives = 50
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.checkpoint_interval = 500
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.enable_logging = true
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.log_base_name = tmlog
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.max_timeout = 300000
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.trust_client_tm = false
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.tm_unique_name = 192.168.31.113.tm
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.oltp_retry_interval = 10000
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: java.naming.provider.url = rmi://localhost:1099
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]USING: com.atomikos.icatch.default_jta_timeout = 10000
+[INFO] [2020-02-20 16:13:42][com.atomikos.icatch.provider.imp.AssemblerImp - 28]Using default (local) logging and recovery...
+[INFO] [2020-02-20 16:13:42][org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 204]Tomcat started on port(s): 8888 (http) with context path '/tests'
+[INFO] [2020-02-20 16:13:42][com.yorkmass.demo.App - 61]Started App in 3.013 seconds (JVM running for 4.718)
+[INFO] [2020-02-20 16:13:57][org.springframework.web.servlet.DispatcherServlet - 525]Initializing Servlet 'dispatcherServlet'
+[INFO] [2020-02-20 16:13:57][org.springframework.web.servlet.DispatcherServlet - 547]Completed initialization in 16 ms
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 34]-------------------requerst--------------------
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 35]URL:http://localhost:8888/tests/stu/list
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 36]HTTP_METHOD:GET
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 37]IP:0:0:0:0:0:0:0:1
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 46]-------------response--------------
+[INFO] [2020-02-20 16:13:57][com.yorkmass.demo.aspect.WebLogAspect - 48]RESPONSE:stu/list
